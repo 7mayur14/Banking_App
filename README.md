@@ -22,15 +22,17 @@ Installation
 
 ##Clone the repository:
 
-sh
+```bash
 git clone https://github.com/your-username/banking_app.git
+
 Navigate to the project directory:
 
-sh
+
+```bash
 cd banking_app
 Install the dependencies:
 
-sh
+```bash
 mvn clean install
 Running the Application
 
