@@ -1,7 +1,7 @@
-###Banking App
+### Banking App
 This is a Spring Boot application for a banking system. It provides functionalities to manage accounts, including creating, updating, and retrieving account details.
 
-##Table of Contents
+## Table of Contents
 
 Getting Started
 Prerequisites
@@ -12,60 +12,60 @@ Technologies Used
 Contributing
 
 
-##Getting Started
+## Getting Started
 
 Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
-##Prerequisites
+## Prerequisites
 Java 11 or higher
 Maven 3.6.0 or higher
 Spring Boot 2.5.0 or higher
 MySQL
 
-##Installation
+## Installation
 
 Clone the repository:
 
-    ```bash
+    
     git clone https://github.com/your-username/banking_app.git
 
  Navigate to the project directory:
 
-    ```bash
+    
     cd banking_app
     Install the dependencies:
 
-    ```bash
+   
     mvn clean install
     Running the Application
 
 Configure the database settings in application.properties file:
 properties
 
-    ```bash
+   
     spring.datasource.url=jdbc:postgresql://localhost:5432/bankingdb
     spring.datasource.username=yourUsername
     spring.datasource.password=yourPassword
     spring.jpa.hibernate.ddl-auto=update
 
-##Run the application:
+## Run the application:
 
-    ```bash
+   
     mvn spring-boot:run
     The application will start on http://localhost:8080.
 
-##API Endpoints
+## API Endpoints
 
 Account Endpoints
 
-##Add Account
+## Add Account
 
-    ```bash
+    
     URL: http://localhost:8080/api/accounts
 Method: POST
 Request Body:
 
-    ```bash
+    
     json
     {
       "accountHolderName": "John Doe",
@@ -74,7 +74,7 @@ Request Body:
 
 Response:
 
-    ```bash
+   
     json
     {  
       "id": 1,
@@ -83,17 +83,20 @@ Response:
     }
 
 
-##Deposit
+## Deposit
 
-    ```bash
+    
     URL: http://localhost:8080/api/accounts
+    
 Method: PUT
+
 Request Body:
 
     json
     {
       "amount": 500.0
     }
+    
 Response:
 
     json
@@ -103,11 +106,13 @@ Response:
       "balance": 1500.0
     }
 
-##Withdraw
+## Withdraw
 
-    ```bash
+
     URL: http://localhost:8080/api/accounts/1/withdraw
+    
 Method: PUT
+
 Request Body:
 
     json
@@ -124,10 +129,11 @@ Response:
       "balance": 800.0
     }
 
-##Get All Accounts
+## Get All Accounts
 
-    ```bash
+    
     URL: http://localhost:8080/api/accounts
+
 Method: GET
 
 Response:
@@ -146,10 +152,11 @@ Response:
       }
     ]
 
-##Delete Account
+## Delete Account
 
-    ```bash
+    
     URL: http://localhost:8080/api/accounts/1
+
 Method: DELETE
 
 Response:
@@ -160,7 +167,7 @@ Response:
     }
 
 
-##Technologies Used
+## Technologies Used
 Java
 Spring Boot
 Spring Data JPA
