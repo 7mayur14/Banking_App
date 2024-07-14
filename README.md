@@ -177,5 +177,5 @@ Spring Data JPA
 PostgreSQL
 Maven
 
-##Contributing
+## Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
