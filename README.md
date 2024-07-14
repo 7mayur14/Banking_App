@@ -33,11 +33,12 @@ Clone the repository:
 
     
     cd banking_app
-    Install the dependencies:
 
-   
+Install the dependencies:
+
     mvn clean install
-    Running the Application
+
+## Running the Application
 
 Configure the database settings in application.properties file:
 properties
@@ -48,7 +49,7 @@ properties
     spring.datasource.password=yourPassword
     spring.jpa.hibernate.ddl-auto=update
 
-## Run the application:
+Run the application:
 
    
     mvn spring-boot:run
@@ -58,11 +59,13 @@ properties
 
 Account Endpoints
 
-## Add Account
+ Add Account
 
     
     URL: http://localhost:8080/api/accounts
+
 Method: POST
+
 Request Body:
 
     
@@ -83,7 +86,7 @@ Response:
     }
 
 
-## Deposit
+ Deposit
 
     
     URL: http://localhost:8080/api/accounts
@@ -106,7 +109,7 @@ Response:
       "balance": 1500.0
     }
 
-## Withdraw
+ Withdraw
 
 
     URL: http://localhost:8080/api/accounts/1/withdraw
@@ -129,7 +132,7 @@ Response:
       "balance": 800.0
     }
 
-## Get All Accounts
+ Get All Accounts
 
     
     URL: http://localhost:8080/api/accounts
@@ -152,7 +155,7 @@ Response:
       }
     ]
 
-## Delete Account
+ Delete Account
 
     
     URL: http://localhost:8080/api/accounts/1
